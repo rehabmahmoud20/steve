@@ -1,0 +1,155 @@
+@use "../../../sass/base/variables" as *;
+@use "../../../sass/base/function" as *;
+
+.testemonial {
+    .heading {
+        margin: auto;
+        width: 25%;
+        margin-bottom: 136px;
+        h2 {
+            text-align: center;
+        }
+    }
+    .calcs {
+        justify-content: space-between;
+        margin-bottom: 71px;
+        .number {
+            font-size: pxToRem(46);
+            font-weight: bold;
+            color: $mainColor;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .type {
+            font-size: pxToRem(20);
+            color: $dark;
+        }
+    }
+    .feedback {
+        justify-content: space-between;
+        gap: 56px;
+        .user-container {
+            width: 52%;
+        }
+        .user {
+            padding: 72px 36px 64px 41px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.16 );
+            gap: 31px;
+            margin-bottom: 31px;
+            .info {
+                h3 {
+                    margin-bottom: 20px;
+                }
+                .text {
+                    font-size: pxToRem(18);
+                    margin-bottom: 15px;
+                    line-height: 28px;
+                }
+                .position {
+                    font-size: pxToRem(16);
+                    margin-bottom: 22px;
+                }
+                .stars {
+                    img {
+                        margin-right: 9px;
+                    }
+                    img:last-of-type {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        .bullets {
+            position: relative;
+            justify-content: center;
+            margin-bottom: 82px;
+            div {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $secondryColor;
+                margin-right: 9px;
+                cursor: pointer;
+            }
+            div:last-of-type {
+                margin-right: 0px;
+            }
+            div.active {
+                background-color: $mainColor;
+            }
+        }
+        .user-text {
+            width: 476px;
+            padding-top: 47px;
+            h2 {
+                margin-bottom: 6px;
+            }
+            p {
+                margin-bottom: 36px;
+            }
+        }
+    }
+}
+
+/* XSmall Media Query */
+
+@media all and (max-width: 1199px) {
+    .testemonial {
+        margin-bottom: 80px;
+        .heading {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .calcs {
+            flex-wrap: wrap;
+            .calc {
+                width: 50%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+        .feedback {
+            flex-direction: column;
+            .user-text {
+                width: 100%;
+            }
+            .user-container {
+                width: 100%;
+                .user {
+                    flex-direction: column;
+                    .image {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Small Media Query */
+
+@media all and (min-width: 576px) and (max-width: 1199px) {
+    .testemonial {
+        .feedback {
+            flex-direction: row;
+        }
+        .calcs {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+/* XLarge Media Query */
+
+@media all and (min-width: 1199px) and (max-width: 1919px) {
+    .testemonial {
+        .heading {
+            width: 60%;
+        }
+    }
+}

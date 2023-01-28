@@ -1,0 +1,161 @@
+@use "../../../sass/base/variables" as *;
+
+.bootcamp {
+    position: relative;
+    padding-bottom: 318px;
+    .rectangle {
+        position: absolute;
+        top: -447px;
+        left: 1247px;
+        z-index: 1;
+    }
+    .dashboard {
+        position: absolute;
+        top: 0px;
+        right: 96px;
+        box-shadow: 0px 0px 25px rgba(0,0,0,0.07 );
+        z-index: 2;
+    }
+    .bootcamp-text {
+        width: 41%;
+        padding-top: 137px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 79px;
+            height: 5px;
+            top: 94px;
+            left: 0px;
+            background-color: $mainColor;
+        }
+        h2 {
+            margin-bottom: 27px;
+        }
+        p {
+            margin-bottom: 32px;
+        }
+        .anchor {
+            align-items: center;
+            cursor: pointer;
+            a {
+                margin-right: 58px;
+            }
+        }
+    }
+}
+
+/* XSmall Media Query */
+
+@media all and (max-width: 575px) {
+    .bootcamp {
+        .rectangle {
+            top: -200px;
+            left: 100px;
+        }
+    }
+}
+
+/* Small Media Query */
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+    .bootcamp {
+        .rectangle {
+            top: -200px;
+            left: 300px;
+        }
+    }
+}
+
+/* Small Media Query */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .bootcamp {
+        .rectangle {
+            top: -200px;
+            left: 500px;
+        }
+    }
+}
+
+/* XSmall To Medium Media Query */
+
+@media all and (max-width: 991px) {
+    .bootcamp {
+        padding-bottom: 100px;
+        .container {
+            flex-direction: column;
+        }
+        .bootcamp-text {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .dashboard {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-bottom: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/* Medium To Xlarge Media Query */
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .bootcamp {
+        padding-bottom: 200px;
+        .rectangle {
+            top: -700px;
+            left: 700px;
+        }
+        .bootcamp-text {
+            width: 45%;
+            padding-top: 30px;
+            &::after {
+                top: 0px;
+            }
+        }
+        .dashboard {
+            width: 40%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/* XLarge Screens */
+
+@media all and (min-width: 1200px) and (max-width: 1399px) {
+    .bootcamp {
+        .rectangle {
+            top: -700px;
+            left: 800px;
+        }
+    }
+}
+
+/* XLarge Screens */
+@media all and (min-width: 1200px) and (max-width: 1919px) {
+    .bootcamp {
+        padding-bottom: 200px;
+        .bootcamp-text {
+            width: 45%;
+        }
+        .dashboard {
+            width: 40%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

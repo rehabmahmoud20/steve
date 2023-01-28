@@ -1,0 +1,134 @@
+@use "../../../sass/base/variables" as *;
+@use "../../../sass/base/function" as *;
+
+footer {
+    padding: 39px 0px 25px 0px;
+    background-color: $black;
+    .container {
+        justify-content: space-between;
+    }
+    .col1 {
+        width: 20%;
+        h2 {
+            display: inline-block;
+            text-align: center;
+            font-size: pxToRem(48);
+            color: $white;
+            margin-bottom: 24px;
+        }
+        p {
+            color: $white;
+            line-height: 28px;
+        }
+    }
+    .col2 {
+        padding-top: 23px;
+        h3 {
+            display: inline-block;
+            text-align: center;
+            font-size: pxToRem(16);
+            color: $white;
+            margin-bottom: 26px;
+        }
+        ul {
+            list-style: none;
+        }
+    }
+    .col3 {
+        padding-top: 23px;
+        h3 {
+            display: inline-block;
+            text-align: center;
+            font-size: pxToRem(16);
+            color: $white;
+            margin-bottom: 22px;
+        }
+        div {
+            width: 479px;
+            border-radius: 25px;
+            height: 50px;
+            background-color: $white;
+            position: relative;
+            input {
+                width: 60%;
+                border-radius: 25px;
+                height: 100%;
+                padding: 15px;
+                outline: none;
+                border: none;
+                z-index: 1;
+                caret-color: $mainColor;
+            }
+            button {
+                position: absolute;
+                right: 0px;
+                width: 43%;
+                border-radius: 25px;
+                height: 100%;
+                background-color: $mainColor;
+                background-image: none;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+/* XSmall Media Query */
+
+@media all and (max-width: 575px) {
+    footer {
+        .container {
+            flex-direction: column;
+        }
+        .col1, .col2, .col3 {
+            width: 100%;
+        }
+        .col3 {
+            div {
+                width: 100%;
+                button {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
+
+/* Small To Medium Media Query */
+
+@media all and (min-width: 576px) and (max-width: 991px) {
+    footer {
+        .container {
+            flex-wrap: wrap;
+            gap: 10%;
+        }
+        .col1, .col2 {
+            width: 45%;
+        }
+        .col3 {
+            width: 100%;
+            div {
+                width: 100%;
+                button {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
+
+/* Large to XLarge Media Query */
+
+@media all and (min-width: 992px) and (max-width: 1919px) {
+    footer {
+        .col3 {
+            width: 40%;
+            div {
+                width: 100%;
+                button {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

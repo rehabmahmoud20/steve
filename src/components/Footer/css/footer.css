@@ -1,0 +1,120 @@
+footer {
+  padding: 39px 0px 25px 0px;
+  background-color: #333333;
+}
+footer .container {
+  justify-content: space-between;
+}
+footer .col1 {
+  width: 20%;
+}
+footer .col1 h2 {
+  display: inline-block;
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 24px;
+}
+footer .col1 p {
+  color: #fff;
+  line-height: 28px;
+}
+footer .col2 {
+  padding-top: 23px;
+}
+footer .col2 h3 {
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 26px;
+}
+footer .col2 ul {
+  list-style: none;
+}
+footer .col3 {
+  padding-top: 23px;
+}
+footer .col3 h3 {
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 22px;
+}
+footer .col3 div {
+  width: 479px;
+  border-radius: 25px;
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+}
+footer .col3 div input {
+  width: 60%;
+  border-radius: 25px;
+  height: 100%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  z-index: 1;
+  caret-color: #ff6057;
+}
+footer .col3 div button {
+  position: absolute;
+  right: 0px;
+  width: 43%;
+  border-radius: 25px;
+  height: 100%;
+  background-color: #ff6057;
+  background-image: none;
+  z-index: 2;
+}
+
+/* XSmall Media Query */
+@media all and (max-width: 575px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .col1, footer .col2, footer .col3 {
+    width: 100%;
+  }
+  footer .col3 div {
+    width: 100%;
+  }
+  footer .col3 div button {
+    padding: 0px;
+  }
+}
+/* Small To Medium Media Query */
+@media all and (min-width: 576px) and (max-width: 991px) {
+  footer .container {
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+  footer .col1, footer .col2 {
+    width: 45%;
+  }
+  footer .col3 {
+    width: 100%;
+  }
+  footer .col3 div {
+    width: 100%;
+  }
+  footer .col3 div button {
+    padding: 0px;
+  }
+}
+/* Large to XLarge Media Query */
+@media all and (min-width: 992px) and (max-width: 1919px) {
+  footer .col3 {
+    width: 40%;
+  }
+  footer .col3 div {
+    width: 100%;
+  }
+  footer .col3 div button {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

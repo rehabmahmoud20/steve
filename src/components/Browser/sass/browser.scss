@@ -1,0 +1,122 @@
+@use "../../../sass/base/variables" as *;
+
+$classes: (col1, #F1291E), (col2, #36C5AD), (col3, #CB4BF8), (col4, #56E65B);
+
+@each $col, $color in $classes {
+    .#{$col} {
+        .activity-logo {
+            background-color: $color;
+        }
+    }
+}
+
+.browser {
+    padding: 51px 0px 89px 0px;
+    position: relative;
+    .container {
+        justify-content: space-between;
+    }
+    .browser-text {
+        width: 41%;
+        position: relative;
+        padding-top: 38px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 79px;
+            height: 5px;
+            top: 0px;
+            left: 0px;
+            background-color: $mainColor;
+        }
+        h2 {
+            margin-bottom: 27px;
+        }
+        p {
+            margin-bottom: 32px;
+        }
+        .anchor {
+            align-items: center;
+            cursor: pointer;
+            a {
+                margin-right: 58px;
+            }
+        }
+    }
+    .activity {
+        width: 48%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 37px;
+        .col1, .col2, .col3, .col4 {
+            .activity-logo {
+                width: 79px;
+                height: 79px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                position: relative;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .darker {
+                font-weight: 500;
+                color: $dark;
+                margin-bottom: 42px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 39px;
+                    left: 0px;
+                    width: 79px;
+                    height: 3px;
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+/* XSmall Media Query */
+
+@media all and (max-width: 575px) {
+    .browser {
+        .container {
+            flex-direction: column;
+        }
+        .browser-text {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .activity {
+            width: 100%;
+            .col1, .col2, .col3, .col4 {
+                .darker {
+                    &::after {
+                        top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Small Media Query */
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+    .browser {
+        .activity {
+            .col1, .col2, .col3, .col4 {
+                .darker {
+                    &::after {
+                        top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

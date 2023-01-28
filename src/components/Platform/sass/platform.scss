@@ -1,0 +1,115 @@
+@use "../../../sass/base/variables" as *;
+
+.platform {
+    position: relative;
+    padding-top: 166px;
+    margin-bottom: 378px;
+    .rectangle {
+        position: absolute;
+        top: -362px;
+        left: -973px;
+    }
+    .container {
+        justify-content: flex-end;
+    }
+    .dashboard {
+        position: absolute;
+        top: 0px;
+        left: -8%;
+        box-shadow: 0px 0px 25px rgba(0,0,0,0.07 );
+    }
+    .platform-text {
+        width: 41%;
+        padding-top: 39px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 79px;
+            height: 5px;
+            top: 0px;
+            left: 0px;
+            background-color: $mainColor;
+        }
+        h2 {
+            margin-bottom: 27px;
+        }
+        p {
+            margin-bottom: 32px;
+        }
+        .anchor {
+            align-items: center;
+            cursor: pointer;
+            a {
+                margin-right: 58px;
+            }
+        }
+    }
+}
+
+/* XSmall To Medium Media Query */
+
+@media all and (max-width: 991px) {
+    .platform {
+        padding-top: 30px;
+        margin-bottom: 50px;
+        p {
+            color: $dark;
+        }
+        .container {
+            flex-direction: column;
+        }
+        .rectangle {
+            left: -1400px;
+        }
+        .dashboard {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            margin-bottom: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .platform-text {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+/* Large To XLarge Media Query */
+
+@media all and (min-width: 992px) and (max-width: 1919px) {
+    .platform {
+        padding-top: 0px;
+        margin-bottom: 250px;
+        .rectangle {
+            left: -1300px;
+            top: -700px;
+        }
+        .platform-text {
+            width: 50%;
+        }
+        .dashboard {
+            width: 50%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/* XLarge Media Query */
+
+@media all and (min-width: 1200px) and (max-width: 1919px) {
+    .platform {
+        padding-top: 166px;
+        .rectangle {
+            left: -1100px;
+            top: -600px;
+        }
+    }
+}
