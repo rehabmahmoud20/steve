@@ -100,7 +100,6 @@ button {
   html {
     font-size: 0.5rem;
   }
-
   .container {
     width: 90%;
   }
@@ -110,7 +109,6 @@ button {
   html {
     font-size: 0.65rem;
   }
-
   .container {
     width: 80%;
   }
@@ -120,7 +118,6 @@ button {
   html {
     font-size: 0.75rem;
   }
-
   .container {
     width: 75%;
   }
@@ -130,7 +127,6 @@ button {
   html {
     font-size: 0.8rem;
   }
-
   .container {
     width: 70%;
   }
@@ -140,10 +136,7 @@ button {
   html {
     font-size: 0.9rem;
   }
-
   .container {
     width: 65%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

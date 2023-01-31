@@ -1,0 +1,108 @@
+.platform {
+  position: relative;
+  padding-top: 166px;
+  margin-bottom: 378px;
+}
+.platform .rectangle {
+  position: absolute;
+  top: -362px;
+  left: -973px;
+}
+.platform .container {
+  justify-content: flex-end;
+}
+.platform .dashboard {
+  position: absolute;
+  top: 0px;
+  left: -8%;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.07);
+}
+.platform .platform-text {
+  width: 41%;
+  padding-top: 39px;
+  position: relative;
+}
+.platform .platform-text::after {
+  content: "";
+  position: absolute;
+  width: 79px;
+  height: 5px;
+  top: 0px;
+  left: 0px;
+  background-color: #ff6057;
+}
+.platform .platform-text h2 {
+  margin-bottom: 27px;
+}
+.platform .platform-text p {
+  margin-bottom: 32px;
+}
+.platform .platform-text .anchor {
+  align-items: center;
+  cursor: pointer;
+}
+.platform .platform-text .anchor a {
+  margin-right: 58px;
+}
+
+/* XSmall To Medium Media Query */
+@media all and (max-width: 991px) {
+  .platform {
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+  .platform p {
+    color: #3b3a3a;
+  }
+  .platform .container {
+    flex-direction: column;
+  }
+  .platform .rectangle {
+    left: -1400px;
+  }
+  .platform .dashboard {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 100px;
+  }
+  .platform .dashboard img {
+    width: 100%;
+    height: 100%;
+  }
+  .platform .platform-text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+/* Large To XLarge Media Query */
+@media all and (min-width: 992px) and (max-width: 1919px) {
+  .platform {
+    padding-top: 0px;
+    margin-bottom: 250px;
+  }
+  .platform .rectangle {
+    left: -1300px;
+    top: -700px;
+  }
+  .platform .platform-text {
+    width: 50%;
+  }
+  .platform .dashboard {
+    width: 50%;
+  }
+  .platform .dashboard img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* XLarge Media Query */
+@media all and (min-width: 1200px) and (max-width: 1919px) {
+  .platform {
+    padding-top: 166px;
+  }
+  .platform .rectangle {
+    left: -1100px;
+    top: -600px;
+  }
+}/*# sourceMappingURL=platform.css.map */
