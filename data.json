@@ -1,0 +1,114 @@
+{
+    "header": [
+        {
+            "id": "1",
+            "image": "/images/shopify.png"
+        },
+        {
+            "id": "2",
+            "image": "/images/nearpad.png"
+        },
+        {
+            "id": "3",
+            "image": "/images/bench.png"
+        },
+        {
+            "id": "4",
+            "image": "/images/forbes.png"
+        },
+        {
+            "id": "5",
+            "image": "/images/bumble.png"
+        }
+    ],
+    "list": [
+        {
+            "id": "1",
+            "to": "browser",
+            "text": "bROWSER"
+        },
+        {
+            "id": "2",
+            "to": "bootcamp",
+            "text": "bOOTCAMPS"
+        },
+        {
+            "id": "3",
+            "to": "works",
+            "text": "hOW it wORKS"
+        },
+        {
+            "id": "4",
+            "to": "testemonial",
+            "text": "tESTEMONIAL"
+        }
+    ],
+    "icon": [
+        {
+            "id": "1",
+            "class": "col1",
+            "image": "/images/icon1.png",
+            "head": "Scale Your Activity",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+        },
+        {
+            "id": "2",
+            "class": "col2",
+            "image": "/images/icon2.png",
+            "head": "Scale Your Activity",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+        },
+        {
+            "id": "3",
+            "class": "col3",
+            "image": "/images/icon3.png",
+            "head": "Scale Your Activity",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+        },
+        {
+            "id": "4",
+            "class": "col4",
+            "image": "/images/icon4.png",
+            "head": "Scale Your Activity",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+        }
+    ],
+    "market": [
+        {
+            "id": "1",
+            "number": "1",
+            "head": "Market Research",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        {
+            "id": "2",
+            "number": "2",
+            "head": "Market Research",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        {
+            "id": "3",
+            "number": "3",
+            "head": "Market Research",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        }
+    ],
+    "testemonial": [
+        {
+            "id": "1",
+            "text": "Downloads"
+        },
+        {
+            "id": "2",
+            "text": "Active User"
+        },
+        {
+            "id": "3",
+            "text": "Positive Feedback"
+        },
+        {
+            "id": "4",
+            "text": "+ rating"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/steve/static/css/main.577457c0.css",
+    "main.js": "/steve/static/js/main.0f9d507f.js",
+    "static/media/Rectangle 9.png": "/steve/static/media/Rectangle 9.90fa00caf7cea2a4b88e.png",
+    "static/media/background.png": "/steve/static/media/background.082c1656ed9e90cac055.png",
+    "static/media/Poppins-Regular.ttf": "/steve/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Rectangle 11.png": "/steve/static/media/Rectangle 11.73ddcd28aefd4387f11d.png",
+    "static/media/dashboard3.png": "/steve/static/media/dashboard3.3acdf49f563fd74dd48b.png",
+    "static/media/dashboard2.png": "/steve/static/media/dashboard2.5052de96531ca0b67d97.png",
+    "static/media/dashboard4.png": "/steve/static/media/dashboard4.73433ee76cef6a5a8ed1.png",
+    "static/media/dashboard.png": "/steve/static/media/dashboard.51784650d54fa3d0416b.png",
+    "static/media/user.png": "/steve/static/media/user.8a72d9b15454afbd6646.png",
+    "index.html": "/steve/index.html",
+    "main.577457c0.css.map": "/steve/static/css/main.577457c0.css.map",
+    "main.0f9d507f.js.map": "/steve/static/js/main.0f9d507f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.577457c0.css",
+    "static/js/main.0f9d507f.js"
+  ]
+}
